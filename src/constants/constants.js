@@ -259,6 +259,7 @@ export const projects = [
     showFullImage: true,
     links: {
       webLink: "http://split-eazy.netlify.app/",
+      playStoreLink:"https://play.google.com/store/apps/details?id=io.bhagatdhruv.spliteasy"
     },
   },
   {
@@ -275,6 +276,7 @@ export const projects = [
     showFullImage: true,
     links: {
       webLink: "https://kachuful-score.netlify.app/",
+      playStoreLink:'https://play.google.com/store/apps/details?id=io.bhagatdhruv.kachuful'
     },
   },
   {
