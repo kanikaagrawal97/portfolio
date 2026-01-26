@@ -271,7 +271,7 @@ export const projects = [
       "Smart scoring system with configurable rules, real-time tracking, and detailed game history.",
     ],
     technologies: ["React.js", "TypeScript", "CSS"],
-    thumbnail: "kachuful.svg",
+    thumbnail: "kachuful.png",
     showFullImage: true,
     links: {
       webLink: "https://kachuful-score.netlify.app/",
