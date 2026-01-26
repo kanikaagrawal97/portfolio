@@ -211,9 +211,10 @@ export const technologiesIconMapper = {
   CakePHP: "cakephp.svg",
   "VS Code Extension": "vscode.svg",
 };
-export const projects = [
+
+export const personalProjects = [
   {
-    title: "Git Pull Watched (Personal)",
+    title: "Git Pull Watched",
     description:
       "A VS Code extension to automatically run database migrations and scripts when git pull changes files.",
     highlights: [
@@ -230,7 +231,7 @@ export const projects = [
     },
   },
   {
-    title: "React Native SMS Module (Personal)",
+    title: "React Native SMS Module",
     description:
       "A modern React Native library for Android to fetch and monitor SMS messages with real-time event triggers.",
     highlights: [
@@ -247,7 +248,7 @@ export const projects = [
     },
   },
   {
-    title: "Split Easy (Personal)",
+    title: "Split Easy",
     description: "Effortlessly Split Expenses with Friends & Family.",
     highlights: [
       "Expense Tracking: Easily add, categorize, and track expenses with detailed analytics.",
@@ -259,11 +260,12 @@ export const projects = [
     showFullImage: true,
     links: {
       webLink: "http://split-eazy.netlify.app/",
-      playStoreLink:"https://play.google.com/store/apps/details?id=io.bhagatdhruv.spliteasy"
+      playStoreLink:
+        "https://play.google.com/store/apps/details?id=io.bhagatdhruv.spliteasy",
     },
   },
   {
-    title: "Kachuful Score Tracker (Personal)",
+    title: "Kachuful Score Tracker",
     description:
       "A modern, responsive web application for tracking scores in the traditional Gujarati card game Kachuful.",
     highlights: [
@@ -276,11 +278,12 @@ export const projects = [
     showFullImage: true,
     links: {
       webLink: "https://kachuful-score.netlify.app/",
-      playStoreLink:'https://play.google.com/store/apps/details?id=io.bhagatdhruv.kachuful'
+      playStoreLink:
+        "https://play.google.com/store/apps/details?id=io.bhagatdhruv.kachuful",
     },
   },
   {
-    title: "Scheduled Website Opener (Personal)",
+    title: "Scheduled Website Opener",
     description:
       "A Chrome extension that automates website opening based on a customizable schedule.",
     highlights: [
@@ -296,7 +299,7 @@ export const projects = [
     },
   },
   {
-    title: "Xpenso (Personal)",
+    title: "Xpenso",
     description: "A comprehensive offline expense management app.",
     highlights: [
       "Developed an expense management app with offline data storage using SQLite.",
@@ -309,6 +312,9 @@ export const projects = [
         "https://play.google.com/store/apps/details?id=io.bhagatdhruv.xpenso2&hl=en_IN",
     },
   },
+];
+
+export const webosmoticProjects = [
   {
     title: "Guidy Tool",
     description:
@@ -491,3 +497,6 @@ export const projects = [
     thumbnail: "misc.webp",
   },
 ];
+
+export const projects = [...personalProjects, ...webosmoticProjects];
+
