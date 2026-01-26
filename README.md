@@ -1,6 +1,6 @@
 # Dhruv Bhagat's Portfolio
 
-A professional and interactive portfolio website showcasing the skills, experience, and projects of Dhruv Bhagat, a Senior Full Stack Developer with over 7 years of experience in building web and mobile applications.
+A professional and interactive portfolio website showcasing the skills, experience, and projects of Dhruv Bhagat, a Senior Full Stack Developer with over 8 years of experience in building web and mobile applications.
 
 ## 🚀 Live Demo
 

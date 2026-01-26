@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 import "./Project.scss";
 import { projects, technologiesIconMapper } from "../../constants/constants";
 import TooltipWrapper from "../TooltipWrapper/TooltipWrapper";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Project() {
   return (
     <div className="projects-container" id="projects">
       <h1>Personal Projects</h1>
       <div className="projects-grid">
-        {projects.map((project) => {
+        {projects.map((project: any) => {
           return (
             <motion.div
               className="project"
@@ -21,11 +22,7 @@ function Project() {
                 <img
                   src={`./assets/${project.thumbnail}`}
                   alt={project.title}
-                  style={{
-                    aspectRatio: "2/1",
-                    objectFit: "cover",
-                  }}
-                  className="zoom"
+                  className={`zoom ${project.showFullImage ? "full-image" : ""}`}
                   width="100%"
                 />
               </a>
@@ -38,10 +35,10 @@ function Project() {
                   gap: 4,
                 }}
               >
-                {project.technologies.map((technology) => (
+                {project.technologies.map((technology: string) => (
                   <TooltipWrapper tooltipText={technology} key={technology}>
                     <img
-                      src={`./assets/icons/${technologiesIconMapper[technology]}`}
+                      src={`./assets/icons/${(technologiesIconMapper as any)[technology]}`}
                       alt={technology}
                       className="techImage"
                     />
@@ -50,7 +47,7 @@ function Project() {
               </div>
               <p>{project.description}</p>
               <ul>
-                {project.highlights?.map((highlight) => {
+                {project.highlights?.map((highlight: string) => {
                   return <li key={highlight}>{highlight}</li>;
                 })}
               </ul>
@@ -63,25 +60,32 @@ function Project() {
                   }}
                 >
                   {Object.keys(project.links).map((linkType) => {
-                    let icon = "external-link.svg";
-                    if (linkType === "playStoreLink") {
-                      icon = "google-play-store.png";
-                    } else if (linkType === "appStore") {
-                      icon = "apple-app-store.svg";
-                    }
                     return (
                       <a
                         target="_blank"
                         key={linkType}
                         rel="noreferrer"
-                        href={project.links[linkType]}
+                        href={(project.links as any)[linkType]}
                         className="externalLink"
                       >
-                        <img
-                          src={`./assets/icons/${icon}`}
-                          className="linkIcon"
-                          alt={linkType}
-                        />
+                        {linkType === "githubLink" ? (
+                          <GitHubIcon
+                            className="linkIcon"
+                            style={{ color: "black" }}
+                          />
+                        ) : (
+                          <img
+                            src={`./assets/icons/${
+                              linkType === "playStoreLink"
+                                ? "google-play-store.png"
+                                : linkType === "appStore"
+                                  ? "apple-app-store.svg"
+                                  : "external-link.svg"
+                            }`}
+                            className="linkIcon"
+                            alt={linkType}
+                          />
+                        )}
                       </a>
                     );
                   })}

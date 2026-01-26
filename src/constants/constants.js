@@ -6,13 +6,27 @@ export const myDetails = {
   email: "dhruvbhagat98@gmail.com",
   phone: "+91-7990850502",
   summary: [
-    "I have around 7 years of experience in the IT industry, specializing in developing web and mobile applications.",
-    "Throughout my career, I have worked with a variety of technologies, including React.js, React Native, Ionic, Angular, and Node.js, successfully delivered  projects to the clients.",
+    "I have around 8 years of experience in the IT industry, specializing in developing web and mobile applications.",
+    "Throughout my career, I have worked with a variety of technologies, including React.js, React Native, Ionic, Angular, and Node.js, successfully delivered projects to the clients.",
     "Beyond technical development, I also have experience in team management, mentoring, and training team members, as well as conducting interviews to build the teams.",
   ],
 };
 
 export const workExperience = [
+  {
+    role: "Senior Software Engineer",
+    company: "Jeavio Private Limited",
+    location: "Remote",
+    start: "Jan 13, 2025",
+    end: "Present",
+    responsibilities: [
+      "Architecting robust backend systems and designing scalable database schemas for high-concurrency applications.",
+      "Implementing and optimizing image analysis and facial recognition features using AWS Rekognition.",
+      "Developing microservices and serverless functions to enhance system modularity and efficiency.",
+      "Collaborating with stakeholders to translate business requirements into technical architectures.",
+      "Leading technical discussions and ensuring code quality through peer reviews and best practices.",
+    ],
+  },
   {
     role: "Technical Team Leader",
     company: "Webosmotic Pvt. Ltd.",
@@ -195,12 +209,46 @@ export const technologiesIconMapper = {
   Flutter: "flutter.svg",
   Ionic: "ionic.svg",
   CakePHP: "cakephp.svg",
+  "VS Code Extension": "vscode.svg",
 };
 export const projects = [
   {
-    title: "Split Easy",
+    title: "Git Pull Watched (Personal)",
     description:
-      "Effortlessly Split Expenses with Friends & Family.",
+      "A VS Code extension to automatically run database migrations and scripts when git pull changes files.",
+    highlights: [
+      "Automatically detect changes in files like schema.prisma or package.json after a git pull.",
+      "Execute custom commands or built-in scripts to keep your development environment in sync.",
+      "Support for multiple environments and custom execution rules.",
+    ],
+    technologies: ["VS Code Extension", "TypeScript", "Node.js"],
+    thumbnail: "git-pull-watched.png",
+    showFullImage: true,
+    links: {
+      webLink:
+        "https://marketplace.visualstudio.com/items?itemName=DhruvBhagat.git-pull-watched",
+    },
+  },
+  {
+    title: "React Native SMS Module (Personal)",
+    description:
+      "A modern React Native library for Android to fetch and monitor SMS messages with real-time event triggers.",
+    highlights: [
+      "Real-time Listening: Monitor incoming SMS messages as they arrive on the device.",
+      "Inbox Access: Fetch SMS messages from the device inbox with advanced filtering options.",
+      "Modern Architecture: Built with support for React Native's latest TurboModule architecture.",
+      "Advanced Filtering: Filter messages by sender (phone number), specific keywords, date range, and read/unread status.",
+    ],
+    technologies: ["React Native", "NPM Package", "TypeScript"],
+    thumbnail: "react-native-sms-module.png",
+    links: {
+      webLink: "https://www.npmjs.com/package/react-native-sms-module",
+      githubLink: "https://github.com/bhaggat/react-native-sms-module",
+    },
+  },
+  {
+    title: "Split Easy (Personal)",
+    description: "Effortlessly Split Expenses with Friends & Family.",
     highlights: [
       "Expense Tracking: Easily add, categorize, and track expenses with detailed analytics.",
       "Group Management: Create and manage multiple groups for different social circles.",
@@ -208,12 +256,13 @@ export const projects = [
     ],
     technologies: ["React.js", "TypeScript", "CSS", "Firebase", "Firestore"],
     thumbnail: "split-easy.svg",
+    showFullImage: true,
     links: {
       webLink: "http://split-eazy.netlify.app/",
     },
   },
   {
-    title: "Kachuful Score Tracker",
+    title: "Kachuful Score Tracker (Personal)",
     description:
       "A modern, responsive web application for tracking scores in the traditional Gujarati card game Kachuful.",
     highlights: [
@@ -223,6 +272,7 @@ export const projects = [
     ],
     technologies: ["React.js", "TypeScript", "CSS"],
     thumbnail: "kachuful.svg",
+    showFullImage: true,
     links: {
       webLink: "https://kachuful-score.netlify.app/",
     },
@@ -236,24 +286,25 @@ export const projects = [
       "Configure websites to launch immediately when Chrome opens.",
     ],
     technologies: ["React.js", "Chrome Extension"],
-    thumbnail: "scheduler-logo.webp",
+    thumbnail: "chrome-schaduler.png",
+    showFullImage: true,
     links: {
       webLink:
         "https://chromewebstore.google.com/detail/scheduled-website-opener/peimippheccjbhianpahacphickkbbjl",
     },
   },
   {
-    title: "React Native SMS Module (Personal)",
-    description:
-      "A React Native library to fetch and monitor SMS messages with real-time event triggers.",
+    title: "Xpenso (Personal)",
+    description: "A comprehensive offline expense management app.",
     highlights: [
-      "Fetch SMS messages from the device inbox with advanced filtering options.",
-      "Listen for incoming SMS messages in real-time.",
+      "Developed an expense management app with offline data storage using SQLite.",
+      "Designed an intuitive interface with smart suggestions for expenses.",
     ],
-    technologies: ["React Native", "NPM Package", "TypeScript"],
-    thumbnail: "react-native-sms-module.png",
+    technologies: ["Ionic 4", "React Native", "SQLite"],
+    thumbnail: "xpenso.webp",
     links: {
-      webLink: "https://www.npmjs.com/package/react-native-sms-module",
+      playStoreLink:
+        "https://play.google.com/store/apps/details?id=io.bhagatdhruv.xpenso2&hl=en_IN",
     },
   },
   {
@@ -326,20 +377,6 @@ export const projects = [
     ],
     technologies: ["React.js", "ClickUp API"],
     thumbnail: "nda.png",
-  },
-  {
-    title: "Xpenso (Personal)",
-    description: "A comprehensive offline expense management app.",
-    highlights: [
-      "Developed an expense management app with offline data storage using SQLite.",
-      "Designed an intuitive interface with smart suggestions for expenses.",
-    ],
-    technologies: ["Ionic 4", "React Native", "SQLite"],
-    thumbnail: "xpenso.webp",
-    links: {
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=io.bhagatdhruv.xpenso2&hl=en_IN",
-    },
   },
   {
     title: "Food Detective",
