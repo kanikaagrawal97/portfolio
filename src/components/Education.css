@@ -1,0 +1,42 @@
+.education-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(to top, var(--bg-dark), #0f0f12);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.education-card {
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary);
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-card-hover);
+}
+
+.institution {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.degree {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.edu-duration {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
