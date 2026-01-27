@@ -5,6 +5,7 @@ import {
   jeavioProjects,
 } from "../constants/constants";
 import { getSocialIcon, getTechIcon } from "../utils/icons";
+import { getAssetUrl } from "../utils/assets";
 import { useState } from "react";
 import "./Projects.css";
 
@@ -55,7 +56,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         {project.thumbnail && (
           <div className="project-thumbnail">
             <img
-              src={`/assets/projects/${project.thumbnail}`}
+              src={getAssetUrl(`assets/projects/${project.thumbnail}`)}
               alt={project.title}
               onError={(e) => {
                 (e.target as HTMLImageElement).style.display = "none";

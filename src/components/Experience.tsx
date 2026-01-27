@@ -1,4 +1,5 @@
 import { workExperience } from "../constants/constants";
+import { getAssetUrl } from "../utils/assets";
 import "./Experience.css";
 
 const Experience = () => {
@@ -21,7 +22,7 @@ const Experience = () => {
                     {exp.logo && (
                       <div className="company-logo-wrapper">
                         <img
-                          src={`/assets/companies/${exp.logo}`}
+                          src={getAssetUrl(`assets/companies/${exp.logo}`)}
                           alt={exp.company}
                           className="company-logo"
                           onError={(e) => {

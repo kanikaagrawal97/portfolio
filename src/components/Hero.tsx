@@ -1,4 +1,5 @@
 import { myDetails } from "../constants/constants";
+import { getAssetUrl } from "../utils/assets";
 import { FaLinkedin, FaDownload } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./Hero.css";
@@ -65,7 +66,7 @@ const Hero = () => {
                 <span className="btn-label">Contact Me</span>
               </a>
               <a
-                href={`/assets/${myDetails.resume}`}
+                href={getAssetUrl(`assets/${myDetails.resume}`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline btn-with-icon"
@@ -87,7 +88,7 @@ const Hero = () => {
           >
             <div className="hero-avatar-wrapper">
               <img
-                src={`/assets/${myDetails.avatar}`}
+                src={getAssetUrl(`assets/${myDetails.avatar}`)}
                 alt={myDetails.name}
                 className="hero-avatar"
                 onError={(e) => {
