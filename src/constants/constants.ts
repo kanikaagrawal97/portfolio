@@ -1,47 +1,33 @@
 export const myDetails = {
-  name: "Dhruv Bhagat",
-  title: "Senior Full Stack Developer",
-  gitLink: "https://github.com/bhaggat",
-  linkedinLink: "https://www.linkedin.com/in/bhagatdhruv/",
-  email: "dhruvbhagat98@gmail.com",
-  phone: "+91-7990850502",
-  avatar: "dhruv.jpeg",
-  resume: "Dhruv MERN CV.pdf",
+  name: "Kanika Bhagat",
+  title: "Team Lead / Senior Software Developer",
+  gitLink: "https://github.com/kanikaagrawal97",
+  linkedinLink: "https://www.linkedin.com/in/kanikabhagat/",
+  email: "kanikaagrawal1997@gmail.com",
+  phone: "+91-7600744043",
+  avatar: "kanika.jpeg",
+  resume: "Kanika CV.pdf",
   summary: [
-    "I have around 8 years of experience in the IT industry, specializing in developing web and mobile applications.",
-    "Throughout my career, I have worked with a variety of technologies, including React.js, React Native, Ionic, Angular, and Node.js, successfully delivered projects to the clients.",
-    "Beyond technical development, I also have experience in team management, mentoring, and training team members, as well as conducting interviews to build the teams.",
+    "Senior Software Developer and Technical Team Lead with over 6 years of experience in delivering high-impact web and mobile applications using React.js and React Native.",
+    "Proven track record of managing the complete project lifecycle, from requirement gathering and strategic client interaction and successful multi-platform deployments.",
+    "A result-oriented critical thinker and mentor dedicated to building high-performing teams, optimizing development workflows, and delivering scalable solutions that drive business growth.",
   ],
 };
 
 export const workExperience = [
   {
-    role: "Senior Software Engineer",
-    company: "Jeavio Private Limited",
-    logo: "jeavio.png",
-    location: "Remote",
-    start: "Jan 13, 2025",
-    end: "Present",
-    responsibilities: [
-      "Architecting robust backend systems and designing scalable database schemas for high-concurrency applications.",
-      "Implementing and optimizing image analysis and facial recognition features using AWS Rekognition.",
-      "Developing microservices and serverless functions to enhance system modularity and efficiency.",
-      "Collaborating with stakeholders to translate business requirements into technical architectures.",
-      "Leading technical discussions and ensuring code quality through peer reviews and best practices.",
-    ],
-  },
-  {
     role: "Technical Team Leader",
     company: "Webosmotic Pvt. Ltd.",
     logo: "webosmotic.png",
     location: "Surat",
-    start: "Sept 2022",
-    end: "Nov 2024",
+    start: "March 2025",
+    end: "March 2026",
     responsibilities: [
       "Led a cross-functional team of developers to deliver web and mobile applications.",
-      "Client communication, Project estimation/timeline/roadmap creation for the project",
-      "Developed and deployed over 5+ mobile applications on play store and app store.",
-      "Managed cloud infrastructure on AWS.",
+      "Client communication, Project estimation/timeline creation for the project",
+      "Developed and deployed several mobile applications including Coables",
+      "Worked on several web applications including Recruitment Smart",
+      "Created MS Teams app for Recruitement Smart",
     ],
   },
   {
@@ -49,458 +35,229 @@ export const workExperience = [
     company: "Webosmotic Pvt. Ltd.",
     logo: "webosmotic.png",
     location: "Surat",
-    start: "Jul 2021",
-    end: "Sept 2022",
+    start: "Feb 2024",
+    end: "March 2025",
     responsibilities: [
-      "Implemented real-time features such as live streaming and messaging using Socket.io, Firebase, Pusher.js, and Agora.io.",
-      "Frontend/Backend optimization and manage scalability",
+      "Successfully managed and completed React JS projects including Baru etc.",
+      "Built and worked on several React Native applications including HFHG etc.",
       "Training interns/team members",
-      "Client communication, Help juniors",
+      "Client interaction",
+      "Deployed several Android and IOS apps to respective stores",
     ],
   },
   {
-    role: "Mobile Application Developer",
+    role: "Software Developer(L1)",
     company: "Webosmotic Pvt. Ltd.",
     logo: "webosmotic.png",
     location: "Surat",
-    start: "Jul 2019",
-    end: "Jul 2021",
+    start: "Feb 2023",
+    end: "Feb 2024",
     responsibilities: [
-      "Built mobile applications using Ionic and React native and deployed them",
-      "Worked on Angular for dashboard/admin module",
+      "Successfully managed and completed React JS projects including Baru, LMS etc.",
+      "Built and worked on several React Native applications including Cultisan, Soli, etc.",
+      "Training interns/team members",
+      "Client interaction",
+      "Deployed several Android and IOS apps to respective stores",
     ],
   },
   {
-    role: "App & Web Developer",
-    company: "Bcube Solutions",
+    role: "Junior Software Developer",
+    company: "Webosmotic Pvt. Ltd.",
+    logo: "webosmotic.png",
+    location: "Surat",
+    start: "Oct 2020",
+    end: "Feb 2023",
+    responsibilities: [
+      "Built mobile applications using React native and deployed them",
+      "Worked on several React JS web applications",
+      "Trained on React JS",
+    ],
+  },
+  {
+    role: "Junior Software Developer",
+    company: "Neoyug Tech",
     logo: "bcube.gif",
     location: "Surat",
-    start: "July 2018",
-    end: "July 2019",
+    start: "July 2020",
+    end: "Oct 2020",
     responsibilities: [
-      "Developed responsive web applications using HTML5, CSS3, Bootstrap, jQuery, and JavaScript.",
-      "Built PWA applications with Capacitor.",
+      "Worked on several live projects like Flymates and Wiseapp",
     ],
   },
   {
     role: "Intern",
-    company: "Bcube Solutions",
+    company: "Neoyug Tech",
     logo: "bcube.gif",
     location: "Surat",
-    start: "Jan 2018",
-    end: "July 2018",
+    start: "Jan 2020",
+    end: "July 2020",
     responsibilities: [
-      "Developed responsive web applications using HTML5, CSS3, Bootstrap, jQuery, and JavaScript.",
-      "Built PWA applications with Capacitor.",
+      "Got trained with React Native",
+      "Helped team with tasks accross various projects",
     ],
   },
 ];
 
 export const education = [
   {
-    institution: "Bhagwan Mahavir College Of Management, Surat",
-    degree: "Master of Computer Applications (Integrated)",
-    duration: "March 2013 - March 2018",
+    institution: "Bhagwan Mahavir College of Computer Application",
+    degree: "Bachelor of Computer Application",
+    duration: "2015 - 2018",
+    link: "https://bmusurat.ac.in/bmu_website/home/welcome",
   },
   {
-    institution: "T & TV Nanpura School, Surat",
-    degree: "HSC (Gujarat Board)",
-    duration: "March 2011 - March 2013",
+    institution:
+      "Dhirubhai Ambani Institute of Information and Communication Technology",
+    degree: "Master of Science: Information Technology",
+    duration: "2018 - 2020",
+    link: "https://www.daiict.ac.in/",
   },
 ];
 
 export const skills = {
   technical: {
-    Frontend: [
-      "React.js",
-      "React Native",
-      "Flutter",
-      "Ionic 5",
-      "Angular (6)",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    Backend: ["Node.js", "Next.js", "Express.js"],
-    Database: [
-      "MongoDB (NoSQL)",
-      "SQL Lite (On Mobile)",
-      "Redis (In Memory) with adaptor",
-      "InfluxDB (Analytics)",
-    ],
-    Firebase: [
-      "Auth",
-      "Firestore",
-      "Realtime Database",
-      "Messaging/Notifications",
-      "Storage",
-      "Crashlytics ",
-    ],
+    Frontend: ["React Native", "React.js", "HTML", "CSS", "JavaScript"],
+    Firebase: ["Auth", "Firestore", "Realtime Database", "Storage"],
     "State Management": [
       "Redux Core",
       "Redux Toolkit",
       "RTK Query",
       "Context API",
-      "DVA",
+      "MobX",
+      "AsyncStorage",
     ],
-    "DevOps & Cloud": [
-      "AWS (EC2",
-      "S3",
-      "CloudFront)",
-      "GitLab CI/CD",
-      "Docker",
-      "Gitlab Pipelines",
-      "Github Actions",
-    ],
-    "Real-Time & Integrations": [
-      "Socket.io",
-      "Pusher.js",
-      "Agora.io",
-      "Shopify API",
-      "ClickUp API",
-      "REST API",
-    ],
-    Payments: [
-      "Stripe",
-      "Razorpay",
-      "Accept Payments",
-      "Google In-App Purchase",
-      "Apple In-App Purchase",
-    ],
-    "Testing & UI": ["Jest", "Storybook", "MUI", "AntD", "React Native Paper"],
-    "Code Quality": ["TypeScript", "ESLint", "Prettier"],
-    Other: [
-      "Accessibility (WCAG 2.1)",
-      "Puppeteer",
-      "Axe core",
-      "Joi",
-      "Docker",
-      "i18n",
-    ],
+    "Real-Time, Media & APIs": ["Socket.io", "VideoSdk", "ClickUp API"],
+    Payments: ["Stripe", "Razorpay"],
+    "Code Quality": ["ESLint", "Prettier", "Husky", "SonarQube"],
+    Other: ["MS teams plugin app", "Joi", "Yup", "i18n"],
+    "Design Frameworks": ["MaterialUI", "React Native Paper"],
   },
   soft: [
     "Leadership & Team Management",
     "Agile Project Management (Scrum)",
     "Strong Communication & Collaboration",
     "Quick Learning & Adaptability",
+    "Client interaction",
   ],
 };
 
-export const personalProjects = [
-  {
-    title: "Git Pull Watched",
-    description:
-      "A VS Code extension to automatically run database migrations and scripts when git pull changes files. Works with Prisma, Mongo, and more.",
-    highlights: [
-      "Automatically detect changes in files like schema.prisma or package.json after a git pull.",
-      "Execute custom commands or built-in scripts to keep your development environment in sync.",
-      "Support for multiple environments and custom execution rules.",
-    ],
-    technologies: ["VS Code Extension", "TypeScript", "Node.js"],
-    thumbnail: "git-pull-watched.png",
-    showFullImage: true,
-    links: {
-      webLink:
-        "https://marketplace.visualstudio.com/items?itemName=DhruvBhagat.git-pull-watched",
-    },
-  },
-  {
-    title: "React Native SMS Module",
-    description:
-      "A modern React Native library for Android to fetch and monitor SMS messages with real-time event triggers.",
-    highlights: [
-      "Real-time Listening: Monitor incoming SMS messages as they arrive on the device.",
-      "Inbox Access: Fetch SMS messages from the device inbox with advanced filtering options.",
-      "Modern Architecture: Built with support for React Native's latest TurboModule architecture.",
-      "Advanced Filtering: Filter messages by sender (phone number), specific keywords, date range, and read/unread status.",
-    ],
-    technologies: ["React Native", "NPM Package", "TypeScript"],
-    thumbnail: "Npm-logo.svg.png",
-    links: {
-      webLink: "https://www.npmjs.com/package/react-native-sms-module",
-      githubLink: "https://github.com/bhaggat/react-native-sms-module",
-    },
-  },
-  {
-    title: "Split Easy",
-    description: "Effortlessly Split Expenses with Friends & Family.",
-    highlights: [
-      "Expense Tracking: Easily add, categorize, and track expenses with detailed analytics.",
-      "Group Management: Create and manage multiple groups for different social circles.",
-      "Smart Bill Splitting: Automatically split bills equally, by percentage, or by custom amounts.",
-    ],
-    technologies: ["React.js", "TypeScript", "CSS", "Firebase", "Firestore"],
-    thumbnail: "split-easy.svg",
-    showFullImage: true,
-    links: {
-      webLink: "http://split-eazy.netlify.app/",
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=io.bhagatdhruv.spliteasy",
-    },
-  },
-  {
-    title: "Kachuful Score Tracker",
-    description:
-      "A modern, responsive web application for tracking scores in the traditional Gujarati card game Kachuful.",
-    highlights: [
-      "Multi-player support tracking up to 8 players simultaneously with flexible round patterns.",
-      "Progressive Web App (PWA) support with offline functionality and installable capabilities.",
-      "Smart scoring system with configurable rules, real-time tracking, and detailed game history.",
-    ],
-    technologies: ["React.js", "TypeScript", "CSS"],
-    thumbnail: "kachuful.png",
-    showFullImage: true,
-    links: {
-      webLink: "https://kachuful-score.netlify.app/",
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=io.bhagatdhruv.kachuful",
-    },
-  },
-  {
-    title: "Scheduled Website Opener",
-    description:
-      "A Chrome extension that automates website opening based on a customizable schedule.",
-    highlights: [
-      "Set specific times to open websites automatically—daily, weekly, monthly, or annually.",
-      "Configure websites to launch immediately when Chrome opens.",
-    ],
-    technologies: ["React.js", "Chrome Extension"],
-    thumbnail: "chrome-schaduler.png",
-    showFullImage: true,
-    links: {
-      webLink:
-        "https://chromewebstore.google.com/detail/scheduled-website-opener/peimippheccjbhianpahacphickkbbjl",
-    },
-  },
-  {
-    title: "Xpenso",
-    description: "A comprehensive offline expense management app.",
-    highlights: [
-      "Developed an expense management app with offline data storage using SQLite.",
-      "Designed an intuitive interface with smart suggestions for expenses.",
-    ],
-    technologies: ["Ionic 4", "React Native", "SQLite"],
-    thumbnail: "xpenso.png",
-    links: {
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=io.bhagatdhruv.xpenso2&hl=en_IN",
-    },
-  },
-];
-
 export const webosmoticProjects = [
   {
-    title: "Guidy Tool",
+    title: "Coables",
     description:
-      "An accessibility widget and multilingual backend service to enhance website inclusivity.",
+      "An online platform connecting parents of autistic children with therapists. The system includes a React JS web application and a React Native mobile app, featuring flexible therapist scheduling, a parent booking system, Razorpay payment integration, and VideoSdk-based video calling with a custom note-taker feature.",
     highlights: [
-      "Developed an accessibility widget with screen readers, voice navigation, customizable font/cursor settings, and multilingual support.",
-      "Integrated WCAG compliance checks, improving client websites' accessibility scores by 30%.",
-      "Managed automated deployments from GitLab to AWS EC2.",
+      "Created the mobile application from scratch and also worked on React JS web app",
+      "Integrated VideoSdk for real-time video consultations and contributed to resolving open issues in the SDK.",
+      "Developed a custom note-taker feature within the video calling flow for therapists.",
+      "Integrated Razorpay for secure session payments.",
+      "Successfully published both Android and iOS applications to the Play Store and App Store.",
     ],
     technologies: [
-      "React.js",
-      "Node.js",
-      "HTML",
-      "CSS",
-      "Vanilla JavaScript",
-      "GitLab Actions (CI/CD)",
-      "Accessibility",
-      "Puppeteer",
-      "AWS S3",
-      "AWS EC2",
-    ],
-    thumbnail: "guidy.png",
-    links: {
-      webLink: "https://staging.guidy.net/",
-    },
-  },
-  {
-    title: "NDA Signed (Component Storybooks)",
-    description:
-      "Highly customizable components represented in Storybook with comprehensive test coverage.",
-    highlights: [
-      "Highly customizable components for multiple projects represented in Storybook.",
-      "Implemented 100% test coverage using Vitest and Playwright.",
-    ],
-    technologies: [
-      "React.js",
-      "TypeScript",
-      "Storybook",
-      "Vitest",
-      "Playwright",
-    ],
-    thumbnail: "nda.png",
-  },
-  {
-    title: "NDA Signed (Real-time Q&A Platform)",
-    description:
-      "A large-scale app enabling real-time customer support and messaging.",
-    highlights: [
-      "Led development for a platform used by clients like Microsoft and TikTok.",
-      "Integrated Pusher.js/Socket.io for real-time data handling, supporting thousands of users.",
-    ],
-
-    technologies: [
+      "React JS",
       "React Native",
-      "React.js",
-      "Node.js",
-      "Socket.io",
-      "TypeScript",
+      "VideoSdk",
+      "Razorpay",
+      "Redux Toolkit",
+      "Firebase",
     ],
-    thumbnail: "pubble.jpeg",
   },
   {
-    title: "NDA Signed (Mortgage Loan Platform)",
+    title: "Recruitment Smart",
     description:
-      "Enhanced usability for mortgage-related workflows with backend integration.",
+      "This platform aims to streamline and enhance recruitment by providing a robust interview scheduling, preparation, and analysis system integrated with MS Teams. The solution leverages AI-based insights (provided by the client's APIs) and seamless communication tools to assist HR, recruiters, and interview panels in conducting effective interviews.",
     highlights: [
-      "Refactored complex form fields and integrated ClickUp for backend management.",
-      "Enhanced usability and data handling for core workflows.",
+      "Created the web portal for interview scheduling and details viewing.",
+      "Developed and published the MS Teams plugin app that enables interviewers to view candidate details and job info.",
+      "Integrated live question marking for questions asked.",
+      "Implemented real-time displaying notification for talk ratio assist interviewers during the process.",
     ],
-    technologies: ["React.js", "ClickUp API"],
-    thumbnail: "lendai-logo.svg",
+    technologies: [
+      "React JS",
+      "MS Teams API",
+      "MS Teams Plugin App",
+      "Redux RTK",
+      "Material UI",
+    ],
   },
   {
-    title: "Food Detective",
+    title: "Baru",
     description:
-      "An AI-powered app for instant product categorization and allergen detection.",
+      "It is a platform that enables a user to place orders for the custom built cabinets. It lets customers select various custom properties and size for any cabinet that they want to get built and check it’s costing realtime on every single property change. It also has clickup integration where the tickets for every newly placed order are created with all the details of that particular order.",
     highlights: [
-      "Built an AI-driven app to scan product ingredients and categorize them as Vegetarian, Non-Vegetarian, or Vegan.",
-      "Implemented allergen detection and dietary guidance, enhancing user engagement.",
+      "Created the whole frontend using React JS andmaterialUI asUI framework.",
+      "Added clickup integration and API implementations",
+      "Created functions for complex cabinet calculations to get realtime total cost as well as order totals.",
+      "Led team and did client interaction and demos",
     ],
-    technologies: ["React Native"],
-    thumbnail: "Food-Detective-Logo.webp",
-    links: {
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=com.webosmotic.ingredient_analyzer",
-    },
+    technologies: ["React JS", "Material UI", "Clickup API"],
+  },
+  {
+    title: "Ramsell",
+    description:
+      "A healthcare mobile application built on the Expo Bare workflow, designed for dynamic user data collection. The app utilizes complex dynamic JSON structures to render interfaces based on the user's selected state, ensuring a tailored data collection process.",
+    highlights: [
+      "Worked on enhancing and maintaining existing functionalities and features.",
+      "Improved application stability by identifying and resolving critical QA bugs.",
+      "Worked on a dynamic data collection system using complex JSON configurations driven by state-specific logic.",
+      "Worked on internationalization (i18n) support for English and Spanish languages.",
+    ],
+    technologies: ["React Native", "Expo", "i18n", "MobX"],
+  },
+  {
+    title: "Soli",
+    description:
+      "Soli empowers successful farming. Users get access to educational videos to help them grow better quality crops and raise healthier, more productive stock. Soli’s dedicated marketplace and support features connect users with farm advisors who can assist them in identifying problems, finding solutions and accessing quality products and services",
+    highlights: [
+      "Built app from scratch",
+      "Integrated Figma designs and Rest APIs provided by client",
+      "Made it offline-first app",
+      "Managed deep-links using firebase",
+      "Led team and did client interaction and demos",
+    ],
+    technologies: ["React Native", "Redux toolkit", "Firebase"],
+  },
+  {
+    title: "HFHG",
+    description:
+      "A specialized lead management mobile application for a hair clinic to track the complete lead lifecycle. The app streamlines the process from initial consultation and communication to costing, surgery scheduling, and quotation generation.",
+    highlights: [
+      "Built the entire application from scratch for managing hair clinic operations.",
+      "Integrated call log retrieval from the device.",
+      "Integrated Figma designs and Rest APIs.",
+    ],
+    technologies: ["React Native", "Redux toolkit", "Firebase"],
   },
   {
     title: "Cultisan",
     description:
-      "A marketplace app connecting farmers and makers with end-users.",
+      "It is a mobile application that helps users to connect with the world’s finest farmers, food and winemakers and make it easy and fair for them to buy their products. User can view the producers, their details, their products, contents related to them, etc.",
     highlights: [
-      "Developed a marketplace app for connecting farmers and makers.",
-      "Implemented video content sharing and integrated Shopify stores with Stripe payments.",
+      "Frontend development using React Native & Redux.",
+      "User data and orders management using firebase.",
+      "Managed complete frontend and database",
+      "Integrated Firebase Firestore, Authentication , Storage, Deeplinks, Analytics, Cloud Functions, Messaging /Notification",
     ],
-    technologies: [
-      "React Native",
-      "Firebase",
-      "Firestore",
-      "Shopify API",
-      "Stripe",
-    ],
-    thumbnail: "cultisan.png",
+    technologies: ["React Native", "Redux", "Firebase", "Firestore", "Stripe"],
   },
   {
-    title: "Gorilla Fit / Welnes",
+    title: "LMS",
     description:
-      "Fitness and wellness apps offering personalized challenges and nutrition plans.",
+      "It is a user friendly platform which allows security guards to learn and get training digitally. Plus the manager can track their team progress and learn side by side. Also, the admins can create course quite easily with drag and drop functionality tomove around course slides and sections.",
     highlights: [
-      "Created fitness and wellness apps with personalized challenges and nutrition plans.",
-      "Integrated secure payments via Stripe and Apple In-App Purchases.",
+      "Frontend development using React JS & material UI",
+      "Integrated Figma designs and Rest APIs provided by client",
+      "Led team and did client interaction",
     ],
-    technologies: [
-      "React Native",
-      "Firestore",
-      "Stripe",
-      "Apple In-App Purchases",
-    ],
-    thumbnail: "welnes.webp",
-    links: {
-      playStoreLink: "https://play.google.com/store/apps/details?id=com.welnes",
-      appStore: "https://apps.apple.com/eg/app/welnes/id1513854681",
-    },
-  },
-  {
-    title: "AIoT Toolkit",
-    description:
-      "An app for streamlined employee and device management with Bluetooth support.",
-    highlights: [
-      "Developed an app with Bluetooth connectivity and secure login using 2FA and SSO.",
-      "Streamlined employee and device management workflows.",
-    ],
-    technologies: ["React Native", "Bluetooth"],
-    thumbnail: "aio-toolkit.webp",
-  },
-  {
-    title: "React Gantt",
-    description:
-      "A high-performance Gantt chart library for React applications.",
-    highlights: [
-      "Built a custom Gantt chart library without third-party dependencies.",
-      "Optimized performance for large datasets using virtualization.",
-    ],
-    technologies: ["React.js", "NPM Package"],
-    thumbnail: "gantt.png",
-  },
-  {
-    title: "NDA Signed (B2B Sales App)",
-    description: "A sales rep management app with offline capabilities.",
-    highlights: [
-      "Developed an offline-enabled app for sales reps with QR code scanning.",
-      "Integrated secure authentication using AWS Cognito.",
-    ],
-    technologies: ["Ionic 4", "SQLite", "Bluetooth"],
-    thumbnail: "nda.png",
-  },
-  {
-    title: "Fiction Friendzy",
-    description:
-      "A proof-of-concept mobile game exploring user engagement strategies.",
-    highlights: [
-      "Developed a POC game app exploring game mechanics and user journeys.",
-      "Deployed the first mobile game project to the Play Store.",
-    ],
-    technologies: ["Flutter", "Firestore"],
-    thumbnail: "fiction-frenzy-1-1.png",
-    links: {
-      playStoreLink:
-        "https://play.google.com/store/apps/details?id=com.webosmotic.fictionfrenzy",
-    },
+    technologies: ["React Native", "Firebase", "Firestore", "Stripe"],
   },
 ];
 
-export const bcubeProjects = [
+export const neoyug = [
   {
     title: "Helping Hand Apps",
-    description:
-      "Assisted in developing multiple utility apps and static websites.",
-    highlights: [
-      "Worked on projects like Mansons, Carpenter Guru, Realty Xchange, and RCSR.",
-      "Developed admin modules and static websites.",
-    ],
-    technologies: ["Ionic", "CakePHP", "HTML", "CSS"],
-    thumbnail: "misc.webp",
-  },
-];
-
-export const jeavioProjects = [
-  {
-    title: "Distinct",
-    description:
-      "Live Data Intelligence platform for Global Brands. A purpose-built tech infrastructure for live experiences that captures intelligence from every interaction to drive real-time optimization and measurable valuation.",
-    highlights: [
-      "Live Optimization Data that improves experiences in real-time.",
-      "Unified ROI Measurement to quantify activation performance across all touchpoints.",
-      "Patent-Pending Tech Process that transforms live data into measurable valuation intelligence.",
-      "Enterprise-ready infrastructure that is SOC-II certified and procurement-ready.",
-    ],
-    links: {
-      webLink: "https://distinct.so/",
-    },
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Storybook",
-      "PostgreSQL",
-      "MongoDB",
-      "Amazon Rekognition",
-      "AWS ECS",
-      "AWS S3",
-      "Python",
-    ],
-    thumbnail: "distinct.svg",
+    description: "Assisted in developing multiple apps and static websites.",
+    highlights: ["Worked on projects like Wiseapp, Flymate"],
+    technologies: ["React Native", "Redux", "Firebase"],
   },
 ];

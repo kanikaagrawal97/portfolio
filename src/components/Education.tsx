@@ -8,11 +8,17 @@ const Education = () => {
         <h2 className="section-title">Education</h2>
         <div className="education-grid">
           {education.map((edu, index) => (
-            <div key={index} className="education-card">
+            <a
+              key={index}
+              href={edu.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="education-card"
+            >
               <h3 className="institution">{edu.institution}</h3>
               <p className="degree">{edu.degree}</p>
               <span className="edu-duration">{edu.duration}</span>
-            </div>
+            </a>
           ))}
         </div>
       </div>

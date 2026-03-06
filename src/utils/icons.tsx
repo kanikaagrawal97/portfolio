@@ -178,6 +178,7 @@ export const getTechIcon = (techName: string) => {
     return { icon: SiPrettier, color: "#F7B93E" };
   if (normalized.includes("chrome"))
     return { icon: FaChrome, color: "#4285F4" };
+  if (normalized.includes("husky")) return { icon: FaGitAlt, color: "#F05032" };
   if (normalized.includes("npm")) return { icon: SiNpm, color: "#CB3837" };
   if (normalized.includes("cakephp"))
     return { icon: SiCakephp, color: "#D33C43" };

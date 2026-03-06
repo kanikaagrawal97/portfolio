@@ -2,6 +2,8 @@ import { myDetails } from "../constants/constants";
 import { getAssetUrl } from "../utils/assets";
 import { FaLinkedin, FaDownload } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import ResumePDF from "./ResumePDF";
 import "./Hero.css";
 
 const Hero = () => {
@@ -52,33 +54,34 @@ const Hero = () => {
                 <span className="btn-icon">
                   <FaLinkedin size={18} />
                 </span>
-                <span className="btn-label">Connect on LinkedIn</span>
+                <span className="btn-label">LinkedIn</span>
               </a>
               <a
                 href={`mailto:${myDetails.email}`}
                 className="btn btn-outline btn-with-icon"
-                aria-label="Contact via Email"
-                title="Contact via Email"
+                aria-label="Email Kanika"
               >
                 <span className="btn-icon">
                   <MdEmail size={18} />
                 </span>
-                <span className="btn-label">Contact Me</span>
+                <span className="btn-label">Email Me</span>
               </a>
-              <a
-                href={getAssetUrl(`assets/${myDetails.resume}`)}
-                target="_blank"
-                rel="noopener noreferrer"
+              <PDFDownloadLink
+                document={<ResumePDF />}
+                fileName={`${myDetails.name.replace(/\s+/g, "_")}_Resume.pdf`}
                 className="btn btn-outline btn-with-icon"
-                download
-                aria-label="Download Resume"
-                title="Download Resume"
               >
-                <span className="btn-icon">
-                  <FaDownload size={18} />
-                </span>
-                <span className="btn-label">Download Resume</span>
-              </a>
+                {({ loading }) => (
+                  <>
+                    <span className="btn-icon">
+                      <FaDownload size={18} />
+                    </span>
+                    <span className="btn-label">
+                      {loading ? "Preparing..." : "Resume"}
+                    </span>
+                  </>
+                )}
+              </PDFDownloadLink>
             </div>
           </div>
 

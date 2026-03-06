@@ -20,14 +20,14 @@ const Header = () => {
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Education", href: "#education" },
   ];
 
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="container header-container">
         <a href="#home" className="logo">
-          Dhruv<span className="logo-accent">.</span>
+          Kanika<span className="logo-accent">.</span>
         </a>
 
         <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>

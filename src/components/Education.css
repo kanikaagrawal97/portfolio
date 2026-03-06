@@ -15,12 +15,18 @@
     padding: var(--spacing-md);
     border-radius: 8px;
     border-left: 4px solid var(--secondary);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    background: rgba(255, 255, 255, 0.03);
+    cursor: pointer;
 }
 
 .education-card:hover {
     transform: translateY(-5px);
-    background: var(--bg-card-hover);
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: var(--primary);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .institution {

@@ -4,21 +4,15 @@ import "./TechStack.css";
 
 const TechStack: React.FC = () => {
   const techLogos = [
-    { name: "React", category: "Frontend" },
-    { name: "TypeScript", category: "Code Quality" },
-    { name: "Node.js", category: "Backend" },
-    { name: "AWS", category: "DevOps & Cloud" },
-    { name: "Docker", category: "DevOps & Cloud" },
-    { name: "MongoDB", category: "Database" },
+    { name: "React JS", category: "Frontend" },
+    { name: "React Native", category: "Frontend" },
     { name: "Firebase", category: "Firebase" },
-    { name: "Git", category: "DevOps & Cloud" },
     { name: "Redux", category: "State Management" },
-    {
-      name: "Socket.io",
-      category: "Real-Time & Integrations",
-    },
+    { name: "Husky", category: "Code Quality" },
+    { name: "Socket.io", category: "Real-Time" },
     { name: "Stripe", category: "Payments" },
-    { name: "Jest", category: "Testing & UI" },
+    { name: "Razorpay", category: "Payments" },
+    { name: "MobX", category: "State Management" },
   ];
 
   return (

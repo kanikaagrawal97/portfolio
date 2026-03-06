@@ -1,9 +1,4 @@
-import {
-  personalProjects,
-  webosmoticProjects,
-  bcubeProjects,
-  jeavioProjects,
-} from "../constants/constants";
+import { webosmoticProjects, neoyug } from "../constants/constants";
 import { getSocialIcon, getTechIcon } from "../utils/icons";
 import { getAssetUrl } from "../utils/assets";
 import { useState } from "react";
@@ -24,10 +19,19 @@ interface Project {
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const [showAllTech, setShowAllTech] = useState(false);
+  const [showAllHighlights, setShowAllHighlights] = useState(false);
+  const [imgError, setImgError] = useState(false);
+
+  const mainTech = project.technologies[0] || "";
+  const { icon: MainIcon, color: techColor } = getTechIcon(mainTech);
 
   const displayedTech = showAllTech
     ? project.technologies
     : project.technologies.slice(0, 4);
+
+  const displayedHighlights = showAllHighlights
+    ? project.highlights
+    : project.highlights?.slice(0, 2);
 
   return (
     <div className="project-card">
@@ -53,29 +57,51 @@ const ProjectCard = ({ project }: { project: Project }) => {
           </div>
         </div>
 
-        {project.thumbnail && (
+        {project.thumbnail && !imgError ? (
           <div className="project-thumbnail">
             <img
               src={getAssetUrl(`assets/projects/${project.thumbnail}`)}
               alt={project.title}
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = "none";
-              }}
+              onError={() => setImgError(true)}
             />
+          </div>
+        ) : (
+          <div
+            className="project-placeholder"
+            style={{
+              background: `linear-gradient(135deg, ${techColor}22 0%, ${techColor}44 100%)`,
+              border: `1px solid ${techColor}33`,
+            }}
+          >
+            {MainIcon && (
+              <MainIcon size={48} style={{ color: techColor, opacity: 0.8 }} />
+            )}
           </div>
         )}
 
-        <p className="project-description">{project.description}</p>
+        <div className="project-body">
+          {project.description && (
+            <p className="project-description">{project.description}</p>
+          )}
 
-        {project.highlights && (
-          <ul className="project-highlights">
-            {project.highlights
-              .slice(0, 2)
-              .map((highlight: string, i: number) => (
-                <li key={i}>{highlight}</li>
-              ))}
-          </ul>
-        )}
+          {project.highlights && (
+            <div className="highlights-container">
+              <ul className="project-highlights">
+                {displayedHighlights?.map((highlight: string, i: number) => (
+                  <li key={i}>{highlight}</li>
+                ))}
+              </ul>
+              {project.highlights.length > 2 && (
+                <button
+                  className="toggle-highlights"
+                  onClick={() => setShowAllHighlights(!showAllHighlights)}
+                >
+                  {showAllHighlights ? "Show less" : "Show more"}
+                </button>
+              )}
+            </div>
+          )}
+        </div>
 
         <div className="project-tech">
           {displayedTech.map((tech: string, i: number) => {
@@ -99,13 +125,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
               </span>
             );
           })}
-          {!showAllTech && project.technologies.length > 4 && (
+          {project.technologies.length > 4 && (
             <span
-              className="tech-tag"
-              onClick={() => setShowAllTech(true)}
-              style={{ cursor: "pointer" }}
+              className="tech-tag clickable"
+              onClick={() => setShowAllTech(!showAllTech)}
             >
-              +{project.technologies.length - 4}
+              {showAllTech
+                ? "Show less"
+                : `+${project.technologies.length - 4}`}
             </span>
           )}
         </div>
@@ -118,26 +145,12 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <div className="container">
-        <h2 className="section-title">Personal Projects</h2>
-        <div className="projects-grid">
-          {personalProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
-        </div>
-
         <h2
           className="section-title"
           style={{ marginTop: "var(--spacing-xl)" }}
         >
-          Professional Work
+          Projects
         </h2>
-
-        <h3 className="subsection-title">Jeavio Private Limited</h3>
-        <div className="projects-grid">
-          {jeavioProjects.map((project) => (
-            <ProjectCard key={`jeavio-${project.title}`} project={project} />
-          ))}
-        </div>
 
         <h3 className="subsection-title">Webosmotic Private Limited</h3>
         <div className="projects-grid">
@@ -149,10 +162,10 @@ const Projects = () => {
           ))}
         </div>
 
-        <h3 className="subsection-title">Bcube Solutions</h3>
+        <h3 className="subsection-title">Neoyug Tech</h3>
         <div className="projects-grid">
-          {bcubeProjects.map((project) => (
-            <ProjectCard key={`bcube-${project.title}`} project={project} />
+          {neoyug.map((project) => (
+            <ProjectCard key={`neoyug-${project.title}`} project={project} />
           ))}
         </div>
       </div>

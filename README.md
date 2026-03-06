@@ -1,6 +1,6 @@
-# Dhruv Bhagat's Portfolio
+# Kanika Bhagat's Portfolio
 
-A professional and interactive portfolio website showcasing the skills, experience, and projects of Dhruv Bhagat, a Senior Full Stack Developer with over 8 years of experience in building web and mobile applications.
+A professional and interactive portfolio website showcasing the skills, experience, and projects of Kanika Bhagat, a Senior Full Stack Developer with over 8 years of experience in building web and mobile applications.
 
 ## 🚀 Live Demo
 
@@ -86,8 +86,8 @@ npm run deploy
 
 ## 🤝 Contact
 
-**Dhruv Bhagat**  
+**Kanika Bhagat**  
 Senior Full Stack Developer  
-📧 [dhruvbhagat98@gmail.com](mailto:dhruvbhagat98@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/bhagatdhruv/)  
-🐙 [GitHub](https://github.com/bhaggat)
+📧 [kanikaagrawal1997@gmail.com](mailto:kanikaagrawal1997@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/kanikabhagat/)  
+🐙 [GitHub](https://github.com/kanikabhagat)

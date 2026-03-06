@@ -124,6 +124,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
+  position: relative;
+  z-index: 10;
 }
 
 .btn-with-icon {
