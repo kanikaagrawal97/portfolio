@@ -4,7 +4,7 @@ A professional and interactive portfolio website showcasing the skills, experien
 
 ## 🚀 Live Demo
 
-Check out the live site here: [https://bhaggat.github.io/portfolio](https://bhaggat.github.io/portfolio)
+Check out the live site here: [https://kanikaagrawal97.github.io/portfolio](https://kanikaagrawal97.github.io/portfolio)
 
 ## ✨ Features
 
@@ -56,7 +56,7 @@ src/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bhaggat/portfolio.git
+   git clone https://github.com/kanikaagrawal97/portfolio.git
    ```
 
 2. Navigate to the project directory:

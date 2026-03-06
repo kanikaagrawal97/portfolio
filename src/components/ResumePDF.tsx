@@ -284,11 +284,11 @@ const ResumePDF = () => {
               <View style={styles.contactItem}>
                 <Text style={styles.contactLabel}>Portfolio</Text>
                 <Link
-                  src="https://kanikabhagat.vercel.app/"
+                  src="https://kanikaagrawal97.github.io/portfolio"
                   style={{ textDecoration: "none" }}
                 >
                   <Text style={styles.contactLink}>
-                    kanikabhagat.vercel.app
+                    kanikaagrawal97.github.io/portfolio
                   </Text>
                 </Link>
               </View>
