@@ -21,7 +21,6 @@ import {
   FaGitAlt,
   FaGlobe,
 } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
 import {
   SiTypescript,
   SiMongodb,
@@ -52,7 +51,6 @@ import {
   SiI18Next,
   SiNpm,
   SiCakephp,
-  SiGoogleplay,
   SiAppstore,
 } from "react-icons/si";
 import { MdWeb, MdEmail, MdPayment, MdStorage, MdCloud } from "react-icons/md";
