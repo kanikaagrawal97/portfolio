@@ -21,6 +21,7 @@ import {
   FaMobileAlt,
   FaGitAlt,
   FaGlobe,
+  FaWpforms,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -53,6 +54,8 @@ import {
   SiNpm,
   SiCakephp,
   SiAppstore,
+  SiAstro,
+  SiGooglemaps,
 } from "react-icons/si";
 import { MdWeb, MdEmail, MdPayment, MdStorage, MdCloud } from "react-icons/md";
 
@@ -107,6 +110,7 @@ export const getTechIcon = (techName: string) => {
   if (normalized.includes("flutter"))
     return { icon: SiFlutter, color: "#02569B" };
   if (normalized.includes("ionic")) return { icon: SiIonic, color: "#3880FF" };
+  if (normalized.includes("astro")) return { icon: SiAstro, color: "#FF5D01" };
   if (normalized === "wcag 2.1" || normalized.includes("accessib"))
     return { icon: FaUniversalAccess, color: "#005A9C" };
   if (normalized.includes("axe"))
@@ -182,6 +186,10 @@ export const getTechIcon = (techName: string) => {
   if (normalized.includes("clickup"))
     return { icon: SiClickup, color: "#7B68EE" };
   if (normalized.includes("agora")) return { icon: FaVideo, color: "#099DFD" };
+  if (normalized.includes("google map"))
+    return { icon: SiGooglemaps, color: "#4285F4" };
+  if (normalized.includes("web3forms"))
+    return { icon: FaWpforms, color: "#3B82F6" };
   if (normalized.includes("rest api")) return { icon: MdWeb, color: "#ffffff" };
 
   // Payments
