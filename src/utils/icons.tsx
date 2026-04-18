@@ -19,7 +19,9 @@ import {
   FaVideo,
   FaMobileAlt,
   FaGitAlt,
+  FaGlobe,
 } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import {
   SiTypescript,
   SiMongodb,
@@ -50,8 +52,25 @@ import {
   SiI18Next,
   SiNpm,
   SiCakephp,
+  SiGoogleplay,
+  SiAppstore,
 } from "react-icons/si";
 import { MdWeb, MdEmail, MdPayment, MdStorage, MdCloud } from "react-icons/md";
+
+const GooglePlayColorIcon = ({ size = 20, style }: any) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="30 336.7 120.9 129.2"
+    style={style}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path fill="#FFD400" d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"/>
+    <path fill="#FF3333" d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"/>
+    <path fill="#48FF48" d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"/>
+    <path fill="#3BCCFF" d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"/>
+  </svg>
+);
 
 export const getTechIcon = (techName: string) => {
   const normalized = techName.toLowerCase();
@@ -192,15 +211,16 @@ export const getTechIcon = (techName: string) => {
 };
 
 export const getSocialIcon = (linkType: string) => {
-  if (linkType.includes("github")) return { icon: FaGithub, color: "#fff" };
-  if (linkType.includes("linkedin"))
+  const normalized = linkType.toLowerCase();
+  if (normalized.includes("github")) return { icon: FaGithub, color: "#fff" };
+  if (normalized.includes("linkedin"))
     return { icon: FaLinkedin, color: "#0077B5" };
-  if (linkType.includes("email")) return { icon: MdEmail, color: "#EA4335" };
-  if (linkType.includes("web")) return { icon: MdWeb, color: "#38bdf8" }; // Cyan-400
-  if (linkType.includes("playstore") || linkType.includes("play store"))
-    return { icon: FaGooglePlay, color: "#3DDC84" };
-  if (linkType.includes("appstore") || linkType.includes("app store"))
-    return { icon: FaAppStore, color: "#0D96F6" };
+  if (normalized.includes("email")) return { icon: MdEmail, color: "#EA4335" };
+  if (normalized.includes("web")) return { icon: FaGlobe, color: "#38bdf8" }; // Cyan-400
+  if (normalized.includes("playstore") || normalized.includes("play store"))
+    return { icon: GooglePlayColorIcon, color: "" }; // Multicolor Custom Icon
+  if (normalized.includes("appstore") || normalized.includes("app store"))
+    return { icon: SiAppstore, color: "#0D96F6" }; // Apple App Store logo
 
-  return { icon: MdWeb, color: "#fff" };
+  return { icon: FaGlobe, color: "#fff" };
 };

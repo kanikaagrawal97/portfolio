@@ -1,4 +1,4 @@
-import { webosmoticProjects, neoyug } from "../constants/constants";
+import { webosmoticProjects, neoyug, freelanceProjects } from "../constants/constants";
 import { getSocialIcon, getTechIcon } from "../utils/icons";
 import { getAssetUrl } from "../utils/assets";
 import { useState } from "react";
@@ -11,6 +11,7 @@ interface Project {
     webLink?: string;
     githubLink?: string;
     playStoreLink?: string;
+    appStoreLink?: string;
   };
   highlights?: string[];
   technologies: string[];
@@ -33,8 +34,27 @@ const ProjectCard = ({ project }: { project: Project }) => {
     ? project.highlights
     : project.highlights?.slice(0, 2);
 
+  const firstLink = project.links ? Object.values(project.links)[0] : undefined;
+
+  const handleCardClick = (e: React.MouseEvent) => {
+    if (
+      (e.target as HTMLElement).closest("button") ||
+      (e.target as HTMLElement).closest("a") ||
+      (e.target as HTMLElement).closest(".clickable")
+    ) {
+      return;
+    }
+    if (firstLink) {
+      window.open(firstLink, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
-    <div className="project-card">
+    <div 
+      className={`project-card ${firstLink ? "clickable-card" : ""}`} 
+      onClick={handleCardClick}
+      style={{ cursor: firstLink ? "pointer" : "default" }}
+    >
       <div className="project-content">
         <div className="project-header">
           <h3 className="project-title">{project.title}</h3>
@@ -151,6 +171,13 @@ const Projects = () => {
         >
           Projects
         </h2>
+
+        <h3 className="subsection-title">Freelance Projects</h3>
+        <div className="projects-grid">
+          {freelanceProjects.map((project) => (
+            <ProjectCard key={`freelance-${project.title}`} project={project} />
+          ))}
+        </div>
 
         <h3 className="subsection-title">Webosmotic Private Limited</h3>
         <div className="projects-grid">

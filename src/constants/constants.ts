@@ -144,6 +144,11 @@ export const skills = {
 export const webosmoticProjects = [
   {
     title: "Coables",
+    links: {
+      webLink: "https://coables.com/",
+      playStoreLink: "http://play.google.com/store/apps/details?id=com.coables&hl=en_IN",
+      appStoreLink: "https://apps.apple.com/in/app/coables/id6544796262"
+    },
     description:
       "An online platform connecting parents of autistic children with therapists. The system includes a React JS web application and a React Native mobile app, featuring flexible therapist scheduling, a parent booking system, Razorpay payment integration, and VideoSdk-based video calling with a custom note-taker feature.",
     highlights: [
@@ -182,6 +187,9 @@ export const webosmoticProjects = [
   },
   {
     title: "Baru",
+    links: {
+      webLink: "https://shop.barucabinets.com/Z",
+    },
     description:
       "It is a platform that enables a user to place orders for the custom built cabinets. It lets customers select various custom properties and size for any cabinet that they want to get built and check it’s costing realtime on every single property change. It also has clickup integration where the tickets for every newly placed order are created with all the details of that particular order.",
     highlights: [
@@ -206,6 +214,9 @@ export const webosmoticProjects = [
   },
   {
     title: "Soli",
+    links: {
+      playStoreLink: "https://play.google.com/store/apps/details?id=ag.soli&pcampaignid=web_share",
+    },
     description:
       "Soli empowers successful farming. Users get access to educational videos to help them grow better quality crops and raise healthier, more productive stock. Soli’s dedicated marketplace and support features connect users with farm advisors who can assist them in identifying problems, finding solutions and accessing quality products and services",
     highlights: [
@@ -259,5 +270,21 @@ export const neoyug = [
     description: "Assisted in developing multiple apps and static websites.",
     highlights: ["Worked on projects like Wiseapp, Flymate"],
     technologies: ["React Native", "Redux", "Firebase"],
+  },
+];
+
+export const freelanceProjects = [
+  {
+    title: "JDM and Associates",
+    links: {
+      webLink: "https://jdm-and-associates.onrender.com/",
+    },
+    description:
+      "A professional website for JDM and Associates LLP, a peer-reviewed corporate service firm specializing in Corporate Laws, Secretarial Compliances, FEMA, XBRL, Secretarial Audits, and IPO Due Diligence.",
+    highlights: [
+      "Developed a modern, responsive web platform to showcase the firm's comprehensive corporate governance solutions and services.",
+      "Integrated sections for their multiple branch offices, leadership profiles, insights, and client information.",
+    ],
+    technologies: ["Astro", "Web3Forms", "Google Map Integration"],
   },
 ];
