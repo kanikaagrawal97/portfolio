@@ -1,6 +1,6 @@
 export const myDetails = {
   name: "Kanika Bhagat",
-  title: "Team Lead / Senior Software Developer",
+  title: "Senior Frontend & Mobile Developer",
   gitLink: "https://github.com/kanikaagrawal97",
   linkedinLink: "https://www.linkedin.com/in/kanikabhagat/",
   email: "kanikaagrawal1997@gmail.com",
@@ -8,9 +8,9 @@ export const myDetails = {
   avatar: "kanika.jpeg",
   resume: "Kanika CV.pdf",
   summary: [
-    "Senior Software Developer and Technical Team Lead with over 6 years of experience in delivering high-impact web and mobile applications using React.js and React Native.",
-    "Proven track record of managing the complete project lifecycle, from requirement gathering and strategic client interaction and successful multi-platform deployments.",
-    "A result-oriented critical thinker and mentor dedicated to building high-performing teams, optimizing development workflows, and delivering scalable solutions that drive business growth.",
+    "Senior Developer with over 6 years of expertise in delivering high-impact web and mobile applications using React.js and React Native. Specialized in building seamless, high-performance user interfaces across web, iOS, and Android platforms while maintaining a deep focus on the React ecosystem.",
+    "Proven track record of managing the full frontend lifecycle—from architecting scalable state management and robust API integrations to strategic client consultation.",
+    "A result-oriented critical thinker and mentor dedicated to enhancing application performance, optimizing development speed, and delivering scalable, client-focused solutions that drive business growth.",
   ],
 };
 
