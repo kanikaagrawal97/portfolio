@@ -88,6 +88,6 @@ npm run deploy
 
 **Kanika Bhagat**  
 Senior Full Stack Developer  
-📧 [kanikaagrawal1997@gmail.com](mailto:kanikaagrawal1997@gmail.com)  
+📧 [kanikabhagat@zohomail.in](mailto:kanikabhagat@zohomail.in)  
 🔗 [LinkedIn](https://www.linkedin.com/in/kanikabhagat/)  
 🐙 [GitHub](https://github.com/kanikabhagat)

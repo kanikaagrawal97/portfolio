@@ -3,7 +3,7 @@ export const myDetails = {
   title: "Senior Frontend & Mobile Developer",
   gitLink: "https://github.com/kanikaagrawal97",
   linkedinLink: "https://www.linkedin.com/in/kanikabhagat/",
-  email: "kanikaagrawal1997@gmail.com",
+  email: "kanikabhagat@zohomail.in",
   phone: "+91-7600744043",
   avatar: "kanika.jpeg",
   resume: "Kanika CV.pdf",
